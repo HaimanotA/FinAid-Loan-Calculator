@@ -67,7 +67,7 @@ def calculate_amortization_amount(p, r, n):
     print(f'The time period is {n} years\n')
 
     print(f'Monthly Installment Amount is {payment}')
-    print('This amount includes principal and interest\n')
+    print('This amount includes principal and interest.\n')
     calculate_total_amount(p, r, n)
 
 
@@ -96,14 +96,15 @@ def calculate_cost_of_borrowing(total_amount, p):
 def start_calculation():
     while True:
         answer = input(
-            '\nAre you ready to calculate your loan? yes/no\n')
+            '\Welcome to FinAid-Loan-Calculator!\n'
+            '\nDo you want to calculate your loan? yes/no\n')
         if answer.lower() != 'yes':
             break
         else:
             clear()
             get_principal()
     clear()
-    print('Thank you for calculating!')
+    print('Thank you for visiting!')
 
 
 start_calculation()
