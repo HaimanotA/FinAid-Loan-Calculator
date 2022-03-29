@@ -68,6 +68,9 @@ Connect your GitHub repository and deploy as normal.
 ## credits
 
 -  Code Institute for creating the deployment terminal Heroku 
+ https://www.geeksforgeeks.org/clear-screen-python/
+ https://stackoverflow.com/questions/2084508/clear-terminal-in-python
+
 - 
 
 ## Constraints
