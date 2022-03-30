@@ -2,12 +2,12 @@
 
 FinAid-Loan-Calculator is a Python terminal based calculator that computes the monthly payment amount, the total amount of payment upto maturity and the cost of borrowing based on the inputs provided by the user. This program runs on Code Institute mock terminal heroku. 
 
-The terminal loan calculator enables the users to type in new input values for the principal amount, interest rate and loan duration to find out the corresponding monthly loan payment, the total amount of payment upto maturity and the total cost of borrowing.
+The terminal loan calculator enables the users to type in new input values for the principal amount, interest rate and loan period to find out the corresponding monthly loan payment, the total amount of payment upto maturity and the total cost of borrowing.
 
 ![Live_version_ Mockup](documentation/live-version.png)
 
 
-## How to use it 
+## How to use the calculator
 
 - The user starts the terminal loan calculator by clicking the 'Run Program' button on heroku. 
 
@@ -15,82 +15,71 @@ The terminal loan calculator enables the users to type in new input values for t
 
     - If the user types 'no' a thank you message will be displayed and tells the user what to do if they want to calculate their loan.
 
-    -  If the user types 'yes', the loan calculator asks the user to enter the principal (the initial size of a loan), the expected annual interest rate and the duration in years to pay back the loan.
+    -  If the user types 'yes', the loan calculator asks the user to enter the principal (the initial size of a loan), the expected annual interest rate and the loan period (the length of time it will take to pay off the loan)in years.
 
-![Live_version_ Mockup](documentation/live-version.png)
+- After entering the above variables and clicking enter, the monthly installment amount that should be paid, the total amount of loan (including the prinicipal amount and the interest rate) at the end of the loan period and the cost of borrowing will be disposed.
 
-
-![Live_version_ Mockup](documentation/live-version.png)
-
-
-    - After entering the above variables, when the user click enter the monthly amount that should be paid,the total amount paid at the end of the loan period and the coost of borrowing is calculated.
-
-- After getting the resultss, the user will be asked if He/she want to to try again with a different input.
+- After getting the results, the user will be asked if he/she wants to try again with a different input value.
 
 
-# Features
 ## Existing Features
 
-- Welcoming message
-- Accepts input from the user
-- after receiving the input, the monthly amount to be paid, the total amount of loan in a given year and the amortization schedule will be displayed.
-- input validation and error checking
-    -- the user should enter a numeber otherwise   a warning message will be displayed. 
-
-    -- the user should enter the interest rate in decimal form, to calculate an interest rate of 7%, 0.07 should be entered instead of 7.
-
-## Future features 
-
---  should allow to plot a graph for different loan scenarios 
-
--- should provide a user with a feedback 
+- Accepts the three inputs namely the principal amount, the interest rate and the loan time period from the user and display three outputs which are the monthly installment amount, the total amount of loan upto maturity and the cost of loan. 
 
 
-## Data Model 
 
---
+- Input validation and error checking
+
+    - the loan calculator has input validation mechanism. The user is expected to enter an integer number both in principal amount and time period and a float number when entering the annnual interest rate. Otherwise an error message will be shown. 
+
+    - The user cannot enter a string, a letter,  a space or special characters.
 
 
-## Testing 
 
+
+## Future features left to implement
+
+- FinAid Loan calculator should generate an amortization schedule.
+
+- It should send an email that contains a payment schedule details to the user. 
+
+- It should allow to plot a graph for different loan scenarios.
+
+## Validator Testing 
+
+ - The code is tested and passed through [http://pep8online.com/]
+ 
+
+ ![validation](documentation/code-validator.png)
 
 
 ## Bugs 
-The bank will send you a confirmation letter after disbursal of the loan amount either as an email or as a paper copy along with a welcome kit.
 
-
-## Remaining bugs
-
-
-## validator testing
-
- -- PEP8
-  --  No errors were found when validating through PEP8online.com.
+- No bugs were discovered when running the code.
 
 
 ## Deployment
 
-Thid project is deployed using Code Institute's mock terminal for Heroku. 
-    -- steps for deployment 
+This project is deployed using Code Institute's mock terminal for Heroku. 
+ - steps for deployment 
      - All dependencies were placed in the `requirements.txt` file
-     - fork or clone 
-     - the buildpacks were set to python and NodeJS
-     - two buildpacks from the _Settings_ tab with the ordering 
-1. `heroku/python`
-2. `heroku/nodejs` were created
-      -  a _Config Var_ called `PORT` with Set this to `8000` wrer created 
-            . Link the Heroku app to the repository
-            . click on deploy
-    
-Connect your GitHub repository and deploy as normal.
+     - Fork or clone the repository 
+     - Set the buildpacks to python and NodeJS
+     - Add the two buildpacks  `heroku/python` and `heroku/nodejs` from the Settings_ tab with the given order.
+     - Create a _Config Var_ called `PORT` with Set this to `8000`
+     - Link the Heroku app to the repository
+    - Click on deploy
+ 
+- Numpy financial was loaded to enable financial functions.
+ 
 
 ## credits
 
 -  Code Institute for creating the deployment terminal Heroku 
- https://www.geeksforgeeks.org/clear-screen-python/
- https://stackoverflow.com/questions/2084508/clear-terminal-in-python
+- The following links were used to clean the terminal.
+-  [https://www.geeksforgeeks.org/clear-screen-python/]
+-  [https://stackoverflow.com/questions/2084508/clear-terminal-in-python]
 
-- 
 
 ## Constraints
 

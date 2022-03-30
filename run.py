@@ -76,7 +76,7 @@ def calculate_total_amount(p, r, n):
     """
     Get the inputs from the user and calculate total loan amount
     """
-    total_amount = p * (1 + r / 12 * n*12)
+    total_amount = npf.pmt(r/12, n*12, p) * n
     total = round(total_amount, 2)
     print(f'Total amount of loan at the end is {total}')
     print('This amount includes principal and interest\n')
@@ -105,7 +105,7 @@ def start_calculation():
             clear()
             get_principal()
     clear()
-    print('Thank you for visiting! \n'
+    print('\nThank you for visiting! \n'
           'If you want to calculate your loan please click Run program!')
 
 
