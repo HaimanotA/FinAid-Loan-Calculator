@@ -1,8 +1,8 @@
 # FinAid-Loan-Calculator
 
-FinAid-Loan-Calculator is a Python terminal loan calculator. It runs on Herooku which is the Code Institute mock terminal. 
+FinAid-Loan-Calculator is a Python terminal based calculator that computes the monthly payment amount, the total amount of payment upto maturity and the cost of borrowing based on the inputs provided by the user. This program runs on Code Institute mock terminal Heroku. 
 
-The terminal loan calculator enable users to try different principal amount with expected interest rate and loan duration to find out the monthly installement amount and the total amount of loan at maturity.
+The terminal loan calculator enables the users to type in new input values for the principal amount, interest rate and loan duration to find out the corresponding monthly loan payment, the total amount of payment upto maturity and the total cost of borrowing.
 
 [!]The live version of FinAid-Loan-Calculator
 
@@ -47,7 +47,7 @@ The terminal loan calculator enable users to try different principal amount with
 
 
 ## Bugs 
-
+The bank will send you a confirmation letter after disbursal of the loan amount either as an email or as a paper copy along with a welcome kit.
 
 
 ## Remaining bugs

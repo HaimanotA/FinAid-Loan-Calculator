@@ -96,8 +96,9 @@ def calculate_cost_of_borrowing(total_amount, p):
 def start_calculation():
     while True:
         answer = input(
-            '\Welcome to FinAid-Loan-Calculator!\n'
-            '\nDo you want to calculate your loan? yes/no\n')
+            'Welcome to FinAid-Loan-Calculator!\n'
+            'We help you figure out if you can afford to borrow!\n'
+            '\nDo you want to calculate your loan? Type yes/no\n')
         if answer.lower() != 'yes':
             break
         else:
