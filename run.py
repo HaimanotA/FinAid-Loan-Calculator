@@ -105,7 +105,8 @@ def start_calculation():
             clear()
             get_principal()
     clear()
-    print('Thank you for visiting!')
+    print('Thank you for visiting! \n'
+          'If you want to calculate your loan please click Run program!')
 
 
 start_calculation()

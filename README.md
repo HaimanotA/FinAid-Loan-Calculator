@@ -1,20 +1,29 @@
 # FinAid-Loan-Calculator
 
-FinAid-Loan-Calculator is a Python terminal based calculator that computes the monthly payment amount, the total amount of payment upto maturity and the cost of borrowing based on the inputs provided by the user. This program runs on Code Institute mock terminal Heroku. 
+FinAid-Loan-Calculator is a Python terminal based calculator that computes the monthly payment amount, the total amount of payment upto maturity and the cost of borrowing based on the inputs provided by the user. This program runs on Code Institute mock terminal heroku. 
 
 The terminal loan calculator enables the users to type in new input values for the principal amount, interest rate and loan duration to find out the corresponding monthly loan payment, the total amount of payment upto maturity and the total cost of borrowing.
 
-[!]The live version of FinAid-Loan-Calculator
+![Live_version_ Mockup](documentation/live-version.png)
+
 
 ## How to use it 
 
--- The user starts the terminal loan calculator by clicking the Run Proogram button. 
+- The user starts the terminal loan calculator by clicking the 'Run Program' button on heroku. 
 
--- the screen displays a welcome message and asks if the user want to calculate a loan. There is a yes or no alternative. If the user type 'no' then it shows a thank you message and ends the program.
+- The screen displays a welcome message and asks if the user wants to calculate his/her loan. There are 'yes' or 'no' alternatives.
 
--- if the user type 'yes', the loan calculator proceeds. it asks the user to enter the amount to be borrowed, the expected annual interest rate and the duration in years to pay back the loan.
+    - If the user types 'no' a thank you message will be displayed and tells the user what to do if they want to calculate their loan.
 
--- after entering the above variables, when the user click enter the monthly amount that should be paid,the total amount paid at the end of the loan period and the coost of borrowing is calculated.
+    -  If the user types 'yes', the loan calculator asks the user to enter the principal (the initial size of a loan), the expected annual interest rate and the duration in years to pay back the loan.
+
+![Live_version_ Mockup](documentation/live-version.png)
+
+
+![Live_version_ Mockup](documentation/live-version.png)
+
+
+    - After entering the above variables, when the user click enter the monthly amount that should be paid,the total amount paid at the end of the loan period and the coost of borrowing is calculated.
 
 - After getting the resultss, the user will be asked if He/she want to to try again with a different input.
 
